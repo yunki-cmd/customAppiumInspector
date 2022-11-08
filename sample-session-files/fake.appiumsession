@@ -48,7 +48,8 @@
     "pcloudy": {},
     "testingbot": {},
     "experitest": {},
-    "roboticmobi": {}
+    "roboticmobi": {},
+    "taas":{}
   },
   "serverType": "remote",
   "visibleProviders": [

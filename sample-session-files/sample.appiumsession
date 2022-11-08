@@ -43,7 +43,8 @@
     "pcloudy": {},
     "testingbot": {},
     "experitest": {},
-    "roboticmobi": {}
+    "roboticmobi": {},
+    "taas":{}
   },
   "serverType": "sauce",
   "visibleProviders": [

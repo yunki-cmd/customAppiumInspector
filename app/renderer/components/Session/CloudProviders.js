@@ -10,6 +10,7 @@ import ServerTabSauce from './ServerTabSauce';
 import ServerTabTestingbot from './ServerTabTestingbot';
 import ServerTabExperitest from './ServerTabExperitest';
 import ServerTabRoboticMobi from './ServerTabRoboticMobi';
+import ServerTabTaas from './ServerTabTaas';
 
 import SessionStyles from './Session.css';
 
@@ -25,6 +26,7 @@ import PcloudyLogo from '../../images/pcloudy_logo.svg';
 import TestingBotLogo from '../../images/testingbot_logo.svg';
 import ExperitestLogo from '../../images/experitest_logo.svg';
 import RoboticMobiLogo from '../../images/roboticmobi_logo.svg';
+import TaasLogo from '../../images/taas.png';
 
 const CloudProviders = {
   sauce: {
@@ -81,7 +83,12 @@ const CloudProviders = {
     tabhead: () => <span className={SessionStyles.tabText}><img src={RoboticMobiLogo} /></span>,
     tab: (props) => <ServerTabRoboticMobi {...props} />,
     logo: RoboticMobiLogo,
-  }
+  },
+  taas: {
+    tabhead: () => <span className={SessionStyles.tabText}><img src={TaasLogo} /></span>,
+    tab: (props) => <ServerTabTaas {...props} />,
+    logo: TaasLogo,
+  },
 
 };
 

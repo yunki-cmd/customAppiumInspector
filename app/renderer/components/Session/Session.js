@@ -65,9 +65,7 @@ export default class Session extends Component {
            requestSaveAsModal, newSession, caps, capsUUID, saveSession,
            visibleProviders = [],
            isCapsDirty, sessionLoading, attachSessId, t} = this.props;
-
     const isAttaching = tabKey === 'attach';
-
     return [
       <Spin spinning={!!sessionLoading} key="main">
         <div className={SessionStyles.sessionContainer}>

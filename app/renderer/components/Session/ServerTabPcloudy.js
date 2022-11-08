@@ -10,7 +10,6 @@ export default class ServerTabPcloudy extends Component {
   render () {
 
     const {server, setServerParam, t} = this.props;
-
     const pcloudyUsernamePlaceholder = 'username@pcloudy.com';
     const pcloudyHostPlaceholder = 'cloud.pcloudy.com';
     const pcloudyAccessKeyExample = 'kjdgtdwn65fdasd78uy6y';

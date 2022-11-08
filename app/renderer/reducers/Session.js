@@ -48,6 +48,7 @@ const INITIAL_STATE = {
     testingbot: {},
     experitest: {},
     roboticmobi: {},
+    taas: {}
   },
   attachSessId: null,
 
