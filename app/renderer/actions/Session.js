@@ -495,10 +495,14 @@ export function newSession (caps, attachSessId = null) {
       headers: {'content-type': 'application/json; charset=utf-8'},
       connectionRetryCount: CONN_RETRIES,
     };
-    console.log(session.serverType);
 
-    if (session.serverType) {
+    if (Object.keys(session.server.taas).length > 0) {
       serverOpts.headers.token = session.server.taas.accessKey;
+      if (desiredCapabilities.platformName === 'iOS') {
+        serverOpts.headers.idmobile = desiredCapabilities['appium:udid'];
+      } else {
+        serverOpts.headers.idmobile = desiredCapabilities['appium:devicesName'];
+      }
     }
 
     if (username && accessKey) {
